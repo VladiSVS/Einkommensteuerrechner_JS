@@ -25,8 +25,6 @@ function einkommenSteuer() {
             y = (zvE - 9744) / 10000
             esT = (995.21 * y + 1400) * y
             esT = Math.round(esT)
-            kirkRechner()
-            splitting()
         } else if (zvE >= 14754 && zvE <= 57918) {
             z = (zvE - 14753) / 10000
             esT = (208.85 * z + 2397) * z + 950.96
