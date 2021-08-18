@@ -21,10 +21,10 @@
                     <label for="Jahr">Jahr:</label>
                 </div>
                 <div>
-                    <select name="yearList" size="1" id="yearList">
-                        <option value="0">2021</option>
-                        <option value="1">2020</option>
-                        <option value="2">2019</option>
+                    <select name="yearList" size="1" id="yearList" onchange="einkommenSteuer()">
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
                     </select>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <label for="Kirchensteuer">Kirchensteuer:</label>
                 </div>
                 <div>
-                    <select name="kirkList" size="1" id="kirkList">
+                    <select name="kirkList" size="1" id="kirkList" onchange="einkommenSteuer()">
                         <option>keine</option>
                         <option id="selectTwo">8 % (Bayern, BaWü)</option>
                         <option id="selectThree">9 % (übrige)</option>
