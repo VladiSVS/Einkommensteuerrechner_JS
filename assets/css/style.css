@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > form {
+    width: 35%;
+    padding: 1%;
+    border: 1px solid #000;
+}
+
+section > form > div {
+    display: flex;
+    margin: 1em;
+}
+
+section > form > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+section > form > div:last-of-type > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+section > form > div:last-of-type > div > label:first-of-type {
+    margin-right: 5%;
+}
+
+section > form > div:first-of-type {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+section > form > div > div:first-of-type {
+    text-align: right;
+    margin-right: 1em;
+}
+
+section > form > div > div {
+    width: 50%;
+}
+
+section > form > div > input[type="button"] {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+    margin-top: 5%;
+}
+

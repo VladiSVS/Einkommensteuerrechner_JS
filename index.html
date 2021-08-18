@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <form action="">
+            <div>
+                <h1>Einkommensteuerrechner</h1>
+            </div>
+            <div>
+                <div>
+                    <label for="Jahr">Jahr:</label>
+                </div>
+                <div>
+                    <select name="yearList" size="1" id="yearList">
+                        <option value="0">2021</option>
+                        <option value="1">2020</option>
+                        <option value="2">2019</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Einkommen" id="einkommenOne">zu versteuerndes Einkommen:</label>
+                    <label class="hide" for="Einkommen" id="einkommenTwo">Person 2:</label>
+                </div>
+                <div>
+                    <input type="number" id="betragOne" placeholder="0,00">
+                    <input class="hide" type="number" id="betragTwo" placeholder="0,00">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Veranlagung">Art der Veranlagung:</label>
+                </div>
+                <div>
+                    <div>
+                        <input name="radio" type="radio" checked="checked" onchange="change()">
+                        <label for="radioOne">Einzelveranlagung</label>
+                    </div>
+                    <div>
+                        <input name="radio" type="radio" id="married" onchange="change()">
+                        <label for="radioTwo">Zusammenveranlagung</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Kirchensteuer">Kirchensteuer:</label>
+                </div>
+                <div>
+                    <select name="kirkList" size="1" id="kirkList">
+                        <option>keine</option>
+                        <option id="selectTwo">8 % (Bayern, BaWü)</option>
+                        <option id="selectThree">9 % (übrige)</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Berechnen" onclick="einkommenSteuer()">
+            </div>
+            <div>
+                <div>
+                    <label for="Einkommensteuer">Einkommensteuer:</label>
+                    <label for="" id="einResult">0</label>
+                </div>
+                <div>
+                    <label for="Solidar">Solidaritätszuschlag:</label>
+                    <label for="">0</label>
+                </div>
+                <div>
+                    <label for="Kirchensteuer">Kirchensteuer:</label>
+                    <label for="" id="kirkSt">0</label>
+                </div>
+                <div>
+                    <label for="Gesamtbelastung">Gesamtbelastung:</label>
+                    <label for="" id="totalResult">0</label>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
